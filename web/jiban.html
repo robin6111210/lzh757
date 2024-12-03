@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="width=device-width" initial-scale="1.0">
+    <title>传递</title>
+    <style>
+        img {
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+        botton {
+          
+        }
+      </style>
+    <link rel="stylesheet" href="../style.css">    
+</head>
+<body>
+    <img id="myImage" src="../images/chuandi.jpg" alt="初始图片">
+    <button onclick="changeImage()">切换图片</button>
+  
+    <script>
+      var imageIndex = 1;
+      function changeImage() {
+        var image = document.getElementById('myImage');
+        if (imageIndex === 1) {
+          image.src = "../images/benfu.jpg";
+          imageIndex = 2;
+        } else {
+          image.src = "../images/chuandi.jpg";
+          imageIndex = 1;
+        }
+      }
+    </script>
+  </body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="width=device-width" initial-scale="1.0">
+    <title>奔赴</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+          width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <section class="san">
+        <img id="myPhoto" src="../images/yiqi.jpg" alt="点击播放音频的照片">
+        <audio id="myAudio" src="../images/向井太一-リセット.mp3" preload="metadata"></audio>
+      
+        <script>
+          var photo = document.getElementById('myPhoto');
+          var audio = document.getElementById('myAudio');
+      
+          photo.addEventListener('click', function() {
+            audio.play();
+          });
+        </script>
+        <h1>点击图片播放音频</h1>
+      </section>
+      
+      </body>
